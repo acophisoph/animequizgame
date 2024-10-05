@@ -1,0 +1,8 @@
+To use this, simply download the entire codebase.
+then in the directory with the codebase create use cmd python -m venv venv to create a virtual environment
+then venv/Scripts.activate.bat to activate the environment
+then pip install requirements.txt to install all python packages
+then run python app.py
+go to the URL, now the game is running on the local network
+to access it on other computers on the local network enter the IPv4 address of the computer:5000 into the url on other computers
+DOES NOT USE HTTPS, DOES NOT HAVE ADVANCED SECURITY FEATURES, DO NOT USE AS PRODUCTION CODE
