@@ -170,5 +170,5 @@ def handle_play_again():
     }
     emit('reset_game', room='game')
 
-if __name__ == '__main__':
-    socketio.run(app, host='0.0.0.0', port=5000, debug=True)
+#if __name__ == '__main__':
+#    socketio.run(app, host='0.0.0.0', port=5000, debug=True)
