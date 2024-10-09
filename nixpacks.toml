@@ -1,2 +1,16 @@
+# Specify the Nix packages to include
+nixPkgs = ["python39Full", "gcc", "curl", "wget"]
+
+# Optionally specify the Python version (if needed elsewhere)
 [variables]
-PYTHON_VERSION = "3.9"  # Replace with your desired Python version
+PYTHON_VERSION = "3.9"
+
+[phases.install]
+commands = [
+  "python3 -m pip install -r requirements.txt"
+]
+
+[phases.start]
+commands = [
+  "python3 app.py"
+]
